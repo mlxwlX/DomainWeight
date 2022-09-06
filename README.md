@@ -12,34 +12,37 @@ pip3 install -r requireme.txt
 
 ## 参数
 
-只有一个-f参数
-
 ```
 options:
   -h, --help  show this help message and exit
   -f FILE     Input file directory
+  -u URL      target url
 
-example:python DomainWeight.py -f url.txt
+example:
+python DomainWeight.py -f url.txt
+python DomainWeight.py -u www.baidu.com
 ```
 
 ## 使用
 
 ```
-使用较为简单（暂时没做其他的功能）
-python3 DomainWeight.py -f url.txt
+单个查：python DomainWeight.py -u www.baidu.com
+批量查：python DomainWeight.py -f url.txt
 ```
 
-![image-20220801180005655](https://i0.hdslb.com/bfs/album/97c365fdec4321e34ceea38c69e18d4a28434f2d.png)
+单个查：
+
+<img src="https://i0.hdslb.com/bfs/album/e8fcc6856fb6d26c038681f8554b2d082f1f9c61.png" alt="image-20220906165003067" style="zoom:67%;" />
+
+批量查：
+
+<img src="https://i0.hdslb.com/bfs/album/97c365fdec4321e34ceea38c69e18d4a28434f2d.png" alt="image-20220801180005655" style="zoom: 67%;" />
 
 ## 不足之处
 
-只支持域名查询权重，不支持IP反查功能（查询结果默认为0）
+只支持域名查询权重，不支持IP反查功能（填写ip查询结果默认为0）
 
-没有对异常结果做处理，程序运行可能出现报错
-
-代码冗余，正则表达不怎么会，先实现效果，后期再学习
-
-有时间再改进吧
+没有对异常结果做处理（感觉没必要做）
 
 ## 公众号
 
